@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Video Player</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-content">
+      <span class="navbar-logo">Home</span>
+      <span class="navbar-item">Login</span>
+      <span class="navbar-item">Other Page</span>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="file-upload">
+      <img class="video-icon" src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Video-5-icon.png" alt="video icon">
+      <input type="file" id="fileupload" name="fileupload" class="file-upload-button" />
+
+      <!-- <p class="file-upload-text">Or drag and drop video files</p> -->
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <div class="create-panel">
+          <h3>Create New Video</h3>
+        </div>
+        <hr>
+        <div class="read-panel">
+          <h3>Upload New Video</h3>
+        </div>
+        <hr>
+        <div class="update-panel">
+          <h3>Update Video</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <iframe class="video-player" src="https://www.youtube.com/embed/bRnm8f6Wavk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video-carousel">
+        <img class="carousel-item" src="https://www.youtube.com/embed/bRnm8f6Wavk" alt="">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
