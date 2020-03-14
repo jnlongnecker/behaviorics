@@ -5,23 +5,28 @@
   <meta charset="utf-8">
   <title>Video Player</title>
   <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
   <div class="navbar">
     <div class="navbar-content">
-      <span class="navbar-logo">Home</span>
-      <span class="navbar-item">Login</span>
-      <span class="navbar-item">Other Page</span>
+      <span class="navbar-logo"><a class="navbar-link" href="index.html">Home</a></span>
+      <span class="navbar-button"><a class="btn dark" href="login.html">login</a></span>
+      <span class="navbar-item"><a class="navbar-link" href="#">About</a></span>
+      <span class="navbar-item"><a class="navbar-link" href="#">Contact</a></span>
+      <span class="navbar-item"><a class="navbar-link" href="#">Devog</a></span>
     </div>
   </div>
 
   <div class="page-content">
     <div class="file-upload">
-      <img class="video-icon" src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Video-5-icon.png" alt="video icon">
-      <input type="file" id="fileupload" name="fileupload" class="file-upload-button" />
 
-      <!-- <p class="file-upload-text">Or drag and drop video files</p> -->
+      <img class="video-icon" src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Video-5-icon.png" alt="video icon">
+      <br>
+
+      <input type="file" id="fileupload" name="fileupload" accept="video/*" multiple="true" class="file-upload-button" />
+      <input type="button" id="submitFiles" name="" value="Submit" />
     </div>
     <div class="sidebar">
       <div class="sidebar-content">
@@ -47,6 +52,9 @@
     </div>
   </div>
 
+<script src="Scripts/video-upload.js">
+
+</script>
 </body>
 
 </html>

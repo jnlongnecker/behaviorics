@@ -28,6 +28,16 @@ hr {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
 }
 
+.navbar-link {
+  text-decoration: none;
+  color: #555;
+}
+
+.navbar-link:hover {
+  color: #449342;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .2);
+}
+
 .navbar-content {
   padding: 10px 3%;
 }
@@ -188,6 +198,7 @@ hr {
 }
 
 .file-upload {
+  position: relative;
   border: solid 1px #CCC;
   border-radius: 5px;
   text-align: center;
@@ -195,6 +206,8 @@ hr {
   max-width: 70%;
   display: inline-block;
   margin: 0 3% 3% 3%;
+  padding-bottom: 3%;
+  overflow: hidden;
 }
 
 .video-icon {
@@ -252,7 +265,7 @@ hr {
 }
 
 .login-body {
-  background-image: repeating-linear-gradient(to bottom right, #C1f6ED, #02353C);
+  background-image: repeating-linear-gradient(#C1f6ED, #C1f6ED, rgba(0,0,0,0));
   background-repeat: no-repeat;
   background-color: #02353C;
 }
@@ -261,19 +274,21 @@ hr {
   padding: 5rem 25% 20%;
 }
 
+.login-head {
+  margin-bottom: 10%;
+}
+
 .login-form {
   background-color: white;
   border: 1px solid black;
-  border-radius: 5px;
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .2);
   text-align: center;
-  padding: 5% 20%;
+  padding: 2.5% 20%;
 }
 
 .input-box {
   border: solid 1px black;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .2);
   margin-bottom: 20px;
 }
 
@@ -283,4 +298,18 @@ hr {
 
 .submit {
   padding: 5px 3rem;
+}
+
+#fileupload {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  top: 0;
+  left: 20%;
+  height: 100%;
+  width: 100%;
+}
+
+#submitFiles {
+  margin: auto;
 }
